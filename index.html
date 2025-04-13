@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jonathan Sovisa | Portofolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Jo's Portofolio</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="section home center">
+    <div class="container">
+      <img src="https://media.licdn.com/dms/image/v2/D5603AQFWEakT9N94BQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1697782982890?e=1750291200&v=beta&t=ybufEvfHyGQxojMgeOyoKUSNGRKtSfB_f5K1EoEMVao" alt="Foto Jonathan Sovisa" class="profile-pic" />
+      <h2>Hi, Im Jonathan Sovisa 👋</h2>
+      <p> Information System Student | Basic Knowledge for Web Developer | Data Enthusiast</p>
+    </div>
+  </section>
+
+  <!-- About -->
+<section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm an Information Student at Christian Duta Wacana University (UKDW) Yogyakarta. I want to learn about data after graduating from DBS Dicoding and take up an internship as a Data Analyst.</p>
+  
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-button active" onclick="openTab('experience')">Experience</button>
+        <button class="tab-button" onclick="openTab('education')">Education</button>
+      </div>
+  
+      <div class="tab-content-area">
+        <!-- Experience Card -->
+        <div id="experience" class="tab-content active">
+          <div class="card">
+            <h3>Experience</h3>
+            <ul>
+              <li>Lecturer Assistant Database System Practicum (2023)</li>
+              <li>Leader HMSI (2024)</li>
+              <li>Secretary UKDW E-SPORTS (2023)</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Education Card -->
+        <div id="education" class="tab-content">
+          <div class="card">
+            <h3>Education</h3>
+            <ul>
+              <li>UKDW - Sistem Informasi (Aug 2022 – now)</li>
+              <li>DBS Dicoding Camp Study Independent ( Feb 2025 – June 2025 )</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="grid-2">
+        <div class="card">
+            <a href="https://docs.google.com/document/d/1kZnQPGmy0Vmcafn3tcvTCcYsffvxCe_xjS7_txSQbE0/edit?usp=sharing" >
+                <h3>My Document for Final Project: "Rekayasa Perangkat Lunak using Laravel 8.0x"</h3></a>  
+                 <p>Website for my project team School Payment</p>                    
+        </div>
+        <div class="card">
+            <a href="https://www.figma.com/proto/N1a6UcveW6EevO5ezQrboo/WEBSITE--FTI?node-id=1-2&t=tX9DULKQBReEgery-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2">
+                 <h3>Designing FTI UKDW Website</h3>  </a>
+                 <p>Making FTI Design website using Figma with my team</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+            <a href="https://jonathansovisas.github.io/ToDoApps/">
+          <h3>Dicoding Mini Project</h3></a>
+          <p>Making To-Do Apps Using JavaScript</p>
+        </div>
+        <div class="card">
+          <a href="https://docs.google.com/document/d/1hNrXDxkKOm2uqzlL9BniLIREFtYOPlz-CliecwBWiYs/edit?usp=sharing">
+          <h3>Mini Project Data Warehouse</h3></a>
+          <p>Visualize my data project using tableu</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+            <a href="https://jonathansovisas.github.io/BreakandHealWebsite/">
+          <h3>Dicoding Mini Project</h3></a>
+          <p>Learn Basic Wesbite Web using HTML</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container center">
+      <h2>Contact Me</h2>
+      <p>📍 Jalan Wates KM.9, Bantul, DI Yogyakarta</p>
+      <p>📞 +62 813-2525-4768</p>
+      <p>✉️ <a href="mailto:jonathansovisa@gmail.com">jonathansovisa@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer class="footer center">
+    <p>&copy; 2025 Jonathan Sovisa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

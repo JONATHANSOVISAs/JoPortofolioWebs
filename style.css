@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #e6f7ff; /* biru muda */
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: #007acc;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #007acc;
+  }
+  
+  /* Profile */
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #007acc;
+  }
+  
+  /* Grid Layout */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+
+  .card ul {
+    list-style-type: none; /* hapus bullet default */
+    padding-left: 1.5rem;
+  }
+  
+  .card ul li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #00AEEF; /* biru muda estetik */
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0 10px;
+    justify-content: center;
+  }
+  
+  .tab-button {
+    background-color: #ffffff;
+    border: 2px solid #007acc;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #007acc;
+    transition: background 0.3s;
+  }
+  
+  .tab-button:hover,
+  .tab-button.active {
+    background-color: #007acc;
+    color: white;
+  }
+  
+  .tab-content {
+    display: none;
+    animation: fade 0.3s ease;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  @keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  /* Footer */
+  .footer {
+    background: #d0eaff;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
